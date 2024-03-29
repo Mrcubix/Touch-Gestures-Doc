@@ -12,7 +12,7 @@ you should be able to start adding new gestures & tweaking them. \
     :maxdepth: 1
     
     running_ux
-    binding_overview
-    adding_gestures
+    gestures_overview
+    setup_gesture
     editing_gestures
     deleting_gestures

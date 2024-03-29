@@ -1,3 +1,7 @@
+figure.align-center {
+    margin-bottom: 24px!important;
+}
+
 /* Makes the sidebar element more spaced out */
 .wy-menu-vertical li.toctree-l1 > a,
 .wy-menu-vertical li.toctree-l1.current > a {
