@@ -8,11 +8,16 @@ on:
 
 jobs:
   build:
+
+    permissions:
+      pages: write      # to deploy to Pages
+      id-token: write   # to verify the deployment originates from an appropriate source
+      
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v3
-      
+
       - name: Install dependencies
         run: |
           pip install sphinx_rtd_theme myst-parser sphinx-copybutton
