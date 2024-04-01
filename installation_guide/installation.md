@@ -14,6 +14,8 @@ I do recommend installing it from the Plugin Manager as it is easy to use & like
 3. Close the Plugin Manager,
 4. Go to the `Filters` tab and select `Touch Gestures`,
 5. Enable it.
+6. Got to the `Tools` tab and select `Touch Gestures Daemon`,
+7. Enable it.
 
 ### From the Repository
 
@@ -23,13 +25,15 @@ I do recommend installing it from the Plugin Manager as it is easy to use & like
 4. Close the Plugin Manager
 5. Go to the `Filters` tab and select `Touch Gestures`,
 6. Enable it.
+7. Got to the `Tools` tab and select `Touch Gestures Daemon`,
+8. Enable it.
 
 ## Downloading the Interface
 
 1. Download the UX for your specific Platform & Architecture from the [Latest Release](https://github.com/Mrcubix/Touch-Gestures/releases/latest)
 
 ```{note}
-The x86 build will not work on x64 systems unless you download the x86 version of .NET 8 Desktop Runtime.
+The x86 build will not work on x64 systems unless you installed the x86 version of .NET 8 Desktop Runtime.
 ```
 
 2. Open the downloaded executable, if everything goes as intended, the application should start connecting to the daemon.
