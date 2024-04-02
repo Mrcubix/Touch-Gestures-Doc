@@ -6,13 +6,14 @@
 <br>
 
 - Q: Can i use this without a touch tablet?
-    - A: Not currently, however, i do think that being able to trigger single-touch festures with just a pen would be a good idea
-         (Soft Keys for example).
+    - A: Not currently, however, i do think that being able to trigger single-touch gestures with just a pen would be a good idea
+         (Soft Keys comes to mind).
 
 <br>
 
 - Q: Can i specify which tablet to configure?
-    - A: Not currently, but an in-interface dropdown will be a neccessity for proper support of OpenTabletDriver 0.6.x & later.
+    - A: You can change the configured tablet the same way as OpenTabletDriver 0.6,x, using a dropdown located at the bottom left of the interface.
+         It is however only available in the 0.6.x version as it's the only version that currently supports multiple tablets.
 
 <br>
 

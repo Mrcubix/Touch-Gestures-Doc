@@ -2,7 +2,11 @@
 
 - Q: The Plugin does not seem to work.
     - A: Make sure that you have followed the installation guide carefully, and that you have the correct dependencies installed. \
-         If the plugin has initialized properly, you should see a line that says `[Touch Gestures:Info]   Initialized` in OpenTabletDriver's console. \
+         If the plugin has initialized properly, you should see any of the following lines in OpenTabletDriver's console:
+         ```log
+         [Touch Gestures Daemon:Info] Initialized
+         [Touch Gestures:Info] Now handling touch gesture for: Wacom CTH-470
+         ```
          At that point you should also be able to trigger the gestures you have set up & you the interface should be able to connect to the plugin.
 
 <br>

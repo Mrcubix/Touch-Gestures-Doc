@@ -20,7 +20,9 @@ extensions = [
 ]
 
 myst_enable_extensions = [
-    "colon_fence"
+    "colon_fence",
+    "attrs_block",
+    "attrs_inline"
 ]
 
 templates_path = ['_templates']
