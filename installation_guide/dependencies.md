@@ -14,9 +14,8 @@
 2. Open `OpenTabletDriver.UX` and go to `Plugins` > `Open Plugin Manager`,
 3. Look for `Enhanced Output Mode` in the list, select it and click `Install`,
 4. Close the Plugin Manager,
-5. Go to the `Tools` tab and select `Touch Toggle`,
+5. Go to the `Filters` tab and select `Touch Settings`,
 6. Enable it & tick `Toggle Touch` to enable touch input.
-7. Select `Touch Settings` & enable it.
 
 ```{admonition} For Wacom PTH-x60 Tablet (Paper Edition) Users Only
 :class: warning
