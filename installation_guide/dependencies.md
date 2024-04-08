@@ -13,7 +13,7 @@
 
 ```{warning}
 At the time of writing, The Plugin Dependency Update hasn't been merged into the plugin repository yet.
-You will need to download the latest version of the plugin from [here](https://github.com/Mrcubix/OTD.EnhancedOutputMode/releases/)
+You will need to download the latest version of the plugin from [here](https://github.com/Mrcubix/OTD.EnhancedOutputMode/releases/) \
 (1.1.2 is the latest version for 0.6.x, 1.1.1 is the latest version for 0.5.x)
 ```
 
