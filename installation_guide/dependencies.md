@@ -11,11 +11,12 @@
     <p>(Install .NET 6 Desktop Runtime if you plan to use OpenTabletDriver 0.6.4.0)</p>
 </section>
 
-```{warning}
-At the time of writing, The Plugin Dependency Update hasn't been merged into the plugin repository yet.
-You will need to download the latest version of the plugin from [here](https://github.com/Mrcubix/OTD.EnhancedOutputMode/releases/) \
-(1.1.2 is the latest version for 0.6.x, 1.1.1 is the latest version for 0.5.x)
-```
+%```{admonition} Do not follow point 2 - 4 for now
+%:class: warning
+%At the time of writing, The Plugin Dependency Update hasn't been merged into the plugin repository yet. \
+%You will need to download the latest version of the plugin from [here](https://github.com/Mrcubix/OTD.EnhancedOutputMode/releases/). \
+%(1.1.2 is the latest version for 0.6.x, 1.1.1 is the latest version for 0.5.x)
+%```
 
 2. Open `OpenTabletDriver.UX` and go to `Plugins` > `Open Plugin Manager`,
 3. Look for `Enhanced Output Mode` in the list, select it and click `Install`,
