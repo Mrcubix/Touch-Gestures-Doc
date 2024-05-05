@@ -35,7 +35,7 @@ Click on the **Hold** gesture to proceed.
 :width: 100%
 ```
 
-You are now on the first part of the setup screen. Here you can configure the option for the **Tap** gesture. \
+You are now on the first part of the setup screen. Here you can configure the option for the **Hold** gesture. \
 The option in question for this gesture is the number of touches required to trigger the gesture.
 
 ```{figure} img/hold_setup_screen_options_dropdown.png
@@ -54,7 +54,7 @@ Click on the `Next` button to proceed.
 ```
 
 You are now on the second part of the setup screen. \
-Here you can configure the Binding that will be triggered by the **Tap** gesture.
+Here you can configure the Binding that will be triggered by the **Hold** gesture.
 
 ```{note}
 A Binding is a key, mouse button, or any actions that may be triggered by another plugin.
@@ -90,7 +90,7 @@ Let's proceed with the final part of the setup by clicking on `Next` again.
 ```
 
 You are now on the final part of the setup screen. \
-Here you can configure the boundaries and additional tweaks for the **Tap** gesture.
+Here you can configure the boundaries and additional tweaks for the **Hold** gesture.
 
 Again, if you have used OpenTabletDriver before, you have probably setup your area in a specific way. \
 Here however, it is slightly different, as a gesture may only be trigerred if it is started within the specified area.
@@ -99,14 +99,16 @@ Here however, it is slightly different, as a gesture may only be trigerred if it
 The boundaries size must be non-zero.
 ```
 
-let's keep it at the default values for now and focus on the only available tweak for this gesture: \
-The `Deadline` tweak.
+let's keep it at the default values for now and focus on the available tweaks for this gesture: \
+The `Hold For` & `Threshold` tweak.
 
-If you hover your cursor over the tweak, you will see a tooltip explaining what it does. \
-In this case, the `Deadline` represents the amount of time within which the gesture must be completed. \
-This include the you put your finger down, until it is lifted up again.
+If you hover your cursor over the tweak, you will see a tooltip explaining what it does.
 
-80ms is the default value, but you can change it to your liking.
+In this case, the `Hold For` represents the amount of time the specified number of fingers need to be held in place for the gesture to be triggered.
+After this time has passed, the binding will be pressed, and will only be released once all the fingers are lifted.
+
+1000ms is the default value, but in our case, we wan't to reproduce a tap, so we will set it to 80ms. \
+you may change it to your liking.
 
 ```{note}
 This value was chosen as it was the average accross all Wacom CTH-xxx & PTH-x51 tablets.
@@ -119,7 +121,7 @@ When you are done, click on the `Complete` button to finish the setup.
 :width: 100%
 ```
 
-Congratulations! You have successfully set up a new **Tap** gesture.
+Congratulations! You have successfully set up a new **Hold** gesture.
 
 ```{tip}
 You may choose to save your configuration by clicking on the `Save` button in the bottom right corner.
