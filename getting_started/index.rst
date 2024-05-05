@@ -13,6 +13,6 @@ you should be able to start adding new gestures & tweaking them. \
     
     running_ux
     gestures_overview
-    setup_gesture
+    hold_setup_gesture
     editing_gestures
     deleting_gestures

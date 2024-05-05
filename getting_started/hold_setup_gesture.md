@@ -13,27 +13,33 @@ You can search for a specific gesture by typing in the search bar at the top.
 
 ## Setting up a simple Tap Gesture
 
-For this example, we will set up the most basic gesture, a single touch **Tap**. \
-A **Tap** will momentarily press a specified Binding.
+```{warning}
+Some users reported the gesture dedicated for taps, named `Tap`, is not working reliably. \
+As a result, i have decided to now use the hold gesture (with low threshold) as a replacement for the tap gesture in the guide,
+as it works more reliably and will suit most use cases better.
+```
+
+For this example, we will set up the most basic gesture, a single touch **Hold**. \
+A **Hold** will keep a specified Binding pressed until the specified amount of fingers are lifted.
 
 ```{note}
 A Binding is a key, mouse button, or any actions that may be triggered by another plugin.
 ```
 
-Click on the **Tap** gesture to proceed.
+Click on the **Hold** gesture to proceed.
 
 ### Options
 
-```{figure} img/tap_setup_screen_options.png
-:alt: Tap Setup Screen (Options Part)
+```{figure} img/hold_setup_screen_options.png
+:alt: Hold Setup Screen (Options Part)
 :width: 100%
 ```
 
 You are now on the first part of the setup screen. Here you can configure the option for the **Tap** gesture. \
 The option in question for this gesture is the number of touches required to trigger the gesture.
 
-```{figure} img/tap_setup_screen_options_dropdown.png
-:alt: Tap Setup Screen (Options Part - Dropdown)
+```{figure} img/hold_setup_screen_options_dropdown.png
+:alt: Hold Setup Screen (Options Part - Dropdown)
 :align: center
 ```
 
@@ -42,8 +48,8 @@ Click on the `Next` button to proceed.
 
 ### Binding
 
-```{figure} img/tap_setup_screen_binding.png
-:alt: Tap Setup Screen (Binding Part)
+```{figure} img/hold_setup_screen_binding.png
+:alt: Hold Setup Screen (Binding Part)
 :width: 100%
 ```
 
@@ -70,16 +76,16 @@ Here you can press most keys on your keyboard, or click on the mouse buttons to 
 For this example, let's left click within the white outlined area. \
 Once that's done, the window will close, and the Binding will appear in the Binding Display.
 
-```{figure} img/tap_setup_screen_binding_set.png
-:alt: Tap Setup Screen (Binding Part - Set)
+```{figure} img/hold_setup_screen_binding_set.png
+:alt: Hold Setup Screen (Binding Part - Set)
 ```
 
 Let's proceed with the final part of the setup by clicking on `Next` again.
 
 ### Boundaries & Additional Tweaks
 
-```{figure} img/tap_setup_screen_tweaks.png
-:alt: Tap Setup Screen (Tweaks Part)
+```{figure} img/hold_setup_screen_tweaks.png
+:alt: Hold Setup Screen (Tweaks Part)
 :width: 100%
 ```
 
@@ -108,7 +114,7 @@ This value was chosen as it was the average accross all Wacom CTH-xxx & PTH-x51 
 
 When you are done, click on the `Complete` button to finish the setup.
 
-```{figure} img/gesture_overview_new.png
+```{figure} img/hold_gesture_overview_new.png
 :alt: Gesture Overview - New Gesture Added
 :width: 100%
 ```
