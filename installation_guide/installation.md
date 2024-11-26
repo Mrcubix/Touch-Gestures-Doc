@@ -45,6 +45,6 @@ I do recommend installing it from the Plugin Manager as it is easy to use & like
 The x86 build will not work on x64 systems unless you installed the x86 version of .NET 8 Desktop Runtime.
 ```
 
-2. Extract the downloaded archive in the same location as OpenTabletDriver.
-2. Open the downloaded executable, if everything goes as intended, the application should start connecting to the daemon.
-3. Once it's connected, the application will move to the Gesture Overview screen.
+2. Extract the downloaded archive in the same location as OpenTabletDriver (or any locations).
+3. Open the downloaded executable, if everything goes as intended, the application should start connecting to the daemon.
+4. Once it's connected, the application will move to the Gesture Overview screen.
