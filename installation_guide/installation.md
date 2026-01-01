@@ -29,7 +29,7 @@ I do recommend installing it from the Plugin Manager as it is easy to use & like
 7. Restart OpenTabletDriver, then proceed with [](#plugin-setup).
 
 (install-error)=
-### If an Error Occurs while using the installer (Broken MacOS Install or MacOS)
+### If an Error Occurs while using the installer (Broken .NET Install or MacOS)
 
 1. Download `Touch-Gestures-0.6.x.zip` (for 0.6.x) OR `Touch-Gestures-0.5.x.zip` for (0.5.3.3) from the [Latest Release](https://github.com/Mrcubix/Touch-Gestures/releases)
 2. Open `OpenTabletDriver.UX` and go to `Plugins` > `Open Plugin Manager`,
