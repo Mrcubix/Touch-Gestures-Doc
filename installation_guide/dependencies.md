@@ -33,6 +33,7 @@ Follow the steps below to obtain these values.
 8. Head to `Tablet` > `Tablet Debugger` and check your touch maxes there.
 9. Move your finger slowly to the bottom right corner of the tablet and check the `X` and `Y` values.
 10. Take note of these values and put them in the `Touch Settings` plugin.
+11. Finally, in the `Output` tab, at the bottom left, switch the current Output Mode to any of the Enhanced Variants.
 
 ## Installing Dependencies for the UX
 
