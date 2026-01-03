@@ -1,0 +1,277 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Setting up a new Gesture &mdash; Touch Gestures 1.0.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/override.css?v=f9f71af8" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=f0ba0345" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=8d563738"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Editing an existing Gesture" href="editing_gestures.html" />
+    <link rel="prev" title="Gestures Overview" href="gestures_overview.html" />
+    <!-- Discord Embed -->
+    <meta property="og:title" content="Touch Gestures User Documentation">
+    <meta property="og:description" content="The official user documentation for Touch Gestures, an OpenTabletDriver plugin that adds for support for touch gestures.">
+    <!-- How to play -->
+    <meta property="og:image" content="">
+    <meta property="theme-color" content="#2980b9">
+    <!-- twitter -->
+    <meta name="twitter:site" content="Touch Gestures User Documentation">
+    <meta name="twitter:title" content="Touch Gestures User Documentation">
+    <meta name="twitter:description" content="The official user documentation for Touch Gestures, an OpenTabletDriver plugin that adds for support for touch gestures.">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image:src" content="">
+    <meta name="theme-color" content="#2980b9">
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            Touch Gestures
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Installation Guide</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../installation_guide/index.html">Installation Guide</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../installation_guide/dependencies.html">Dependencies</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../installation_guide/dependencies.html#installing-dependencies-for-the-plugin">Installing Dependencies for the plugin</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../installation_guide/dependencies.html#installing-dependencies-for-the-ux">Installing Dependencies for the UX</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../installation_guide/installation.html">Installation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../installation_guide/installation.html#installing-the-plugin">Installing The Plugin</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../installation_guide/installation.html#from-the-plugin-manager">From the Plugin Manager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../installation_guide/installation.html#from-the-repository">From the Repository</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../installation_guide/installation.html#if-an-error-occurs-while-using-the-installer-broken-net-install-or-macos">If an Error Occurs while using the installer (Broken .NET Install or MacOS)</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../installation_guide/installation.html#setting-up-the-plugin">Setting Up The Plugin</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../installation_guide/installation.html#downloading-the-interface">Downloading the Interface</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Getting Started</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="running_ux.html">Running the UX</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gestures_overview.html">Gestures Overview</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Setting up a new Gesture</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#setting-up-a-simple-tap-gesture">Setting up a simple Tap Gesture</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#options">Options</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#binding">Binding</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#boundaries-additional-tweaks">Boundaries &amp; Additional Tweaks</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="editing_gestures.html">Editing an existing Gesture</a></li>
+<li class="toctree-l2"><a class="reference internal" href="deleting_gestures.html">Deleting a Gestures</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">FAQ</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../faq/index.html">Frequently Asked Questions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../faq/basic.html">Basic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../faq/troubleshooting.html">Troubleshooting</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Touch Gestures</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">Getting Started</a></li>
+      <li class="breadcrumb-item active">Setting up a new Gesture</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/getting_started/hold_setup_gesture.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="setting-up-a-new-gesture">
+<h1>Setting up a new Gesture<a class="headerlink" href="#setting-up-a-new-gesture" title="Link to this heading"></a></h1>
+<p>We will now set up a new gesture. Let’s start with by clicking the <code class="docutils literal notranslate"><span class="pre">Setup</span> <span class="pre">a</span> <span class="pre">new</span> <span class="pre">Gesture</span></code> button.
+(or the <code class="docutils literal notranslate"><span class="pre">+</span></code> button in the top right corner)</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/gesture_selection_screen.png"><img alt="Gesture Selection Screen" src="../_images/gesture_selection_screen.png" style="width: 100%;" />
+</a>
+</figure>
+<p>Here you will see a list of all the gestures that are available to set up. <br />
+You can search for a specific gesture by typing in the search bar at the top.</p>
+<section id="setting-up-a-simple-tap-gesture">
+<h2>Setting up a simple Tap Gesture<a class="headerlink" href="#setting-up-a-simple-tap-gesture" title="Link to this heading"></a></h2>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Some users reported the gesture dedicated for taps, named <code class="docutils literal notranslate"><span class="pre">Tap</span></code>, is not working reliably. <br />
+As a result, i have decided to now use the hold gesture (with low threshold) as a replacement for the tap gesture in the guide,
+as it works more reliably and will suit most use cases better.</p>
+</div>
+<p>For this example, we will set up the most basic gesture, a single touch <strong>Hold</strong>. <br />
+A <strong>Hold</strong> will keep a specified Binding pressed until the specified amount of fingers are lifted.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>A Binding is a key, mouse button, or any actions that may be triggered by another plugin.</p>
+</div>
+<p>Click on the <strong>Hold</strong> gesture to proceed.</p>
+<section id="options">
+<h3>Options<a class="headerlink" href="#options" title="Link to this heading"></a></h3>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/hold_setup_screen_options.png"><img alt="Hold Setup Screen (Options Part)" src="../_images/hold_setup_screen_options.png" style="width: 100%;" />
+</a>
+</figure>
+<p>You are now on the first part of the setup screen. Here you can configure the option for the <strong>Hold</strong> gesture. <br />
+The option in question for this gesture is the number of touches required to trigger the gesture.</p>
+<figure class="align-center">
+<img alt="Hold Setup Screen (Options Part - Dropdown)" src="../_images/hold_setup_screen_options_dropdown.png" />
+</figure>
+<p>Let’s keep this number at <code class="docutils literal notranslate"><span class="pre">1</span></code> for now. <br />
+Click on the <code class="docutils literal notranslate"><span class="pre">Next</span></code> button to proceed.</p>
+</section>
+<section id="binding">
+<h3>Binding<a class="headerlink" href="#binding" title="Link to this heading"></a></h3>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/hold_setup_screen_binding.png"><img alt="Hold Setup Screen (Binding Part)" src="../_images/hold_setup_screen_binding.png" style="width: 100%;" />
+</a>
+</figure>
+<p>You are now on the second part of the setup screen. <br />
+Here you can configure the Binding that will be triggered by the <strong>Hold</strong> gesture.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>A Binding is a key, mouse button, or any actions that may be triggered by another plugin.</p>
+</div>
+<p>This interface should be familiar to you if you have used OpenTabletDriver before:
+The large button will open the simple binding editor,
+while the small button containing <code class="docutils literal notranslate"><span class="pre">...</span></code> will open the advanced binding editor.</p>
+<p>For this example, we will use the simple binding editor. <br />
+Click on the large button to proceed.</p>
+<figure class="align-center">
+<img alt="Simple Binding Editor" src="../_images/binding_editor_simple.png" />
+</figure>
+<p>Here you can press most keys on your keyboard, or click on the mouse buttons to select them. <br />
+For this example, let’s left click within the white outlined area. <br />
+Once that’s done, the window will close, and the Binding will appear in the Binding Display.</p>
+<figure class="align-default">
+<img alt="Hold Setup Screen (Binding Part - Set)" src="../_images/hold_setup_screen_binding_set.png" />
+</figure>
+<p>Let’s proceed with the final part of the setup by clicking on <code class="docutils literal notranslate"><span class="pre">Next</span></code> again.</p>
+</section>
+<section id="boundaries-additional-tweaks">
+<h3>Boundaries &amp; Additional Tweaks<a class="headerlink" href="#boundaries-additional-tweaks" title="Link to this heading"></a></h3>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/hold_setup_screen_tweaks.png"><img alt="Hold Setup Screen (Tweaks Part)" src="../_images/hold_setup_screen_tweaks.png" style="width: 100%;" />
+</a>
+</figure>
+<p>You are now on the final part of the setup screen. <br />
+Here you can configure the boundaries and additional tweaks for the <strong>Hold</strong> gesture.</p>
+<p>Again, if you have used OpenTabletDriver before, you have probably setup your area in a specific way. <br />
+Here however, it is slightly different, as a gesture may only be trigerred if it is started within the specified area.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>The boundaries size must be non-zero.</p>
+</div>
+<p>let’s keep it at the default values for now and focus on the available tweaks for this gesture: <br />
+The <code class="docutils literal notranslate"><span class="pre">Hold</span> <span class="pre">For</span></code> &amp; <code class="docutils literal notranslate"><span class="pre">Threshold</span></code> tweak.</p>
+<p>If you hover your cursor over the tweak, you will see a tooltip explaining what it does.</p>
+<p>In this case, the <code class="docutils literal notranslate"><span class="pre">Hold</span> <span class="pre">For</span></code> represents the amount of time the specified number of fingers need to be held in place for the gesture to be triggered.
+After this time has passed, the binding will be pressed, and will only be released once all the fingers are lifted.</p>
+<p>1000ms is the default value, but in our case, we wan’t to reproduce a tap, so we will set it to 80ms. <br />
+you may change it to your liking.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This value was chosen as it was the average accross all Wacom CTH-xxx &amp; PTH-x51 tablets.</p>
+</div>
+<p>When you are done, click on the <code class="docutils literal notranslate"><span class="pre">Complete</span></code> button to finish the setup.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/hold_gesture_overview_new.png"><img alt="Gesture Overview - New Gesture Added" src="../_images/hold_gesture_overview_new.png" style="width: 100%;" />
+</a>
+</figure>
+<p>Congratulations! You have successfully set up a new <strong>Hold</strong> gesture.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>You may choose to save your configuration by clicking on the <code class="docutils literal notranslate"><span class="pre">Save</span></code> button in the bottom right corner.</p>
+</div>
+<p>We will now move on to the next step: Editing an existing Gesture.</p>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="gestures_overview.html" class="btn btn-neutral float-left" title="Gestures Overview" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="editing_gestures.html" class="btn btn-neutral float-right" title="Editing an existing Gesture" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Gess1t (Mrcubix).</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
